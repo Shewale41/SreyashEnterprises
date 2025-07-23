@@ -10,10 +10,15 @@ import sabmiller from '../assets/clients/sabmiller.webp';
 import tbea from '../assets/clients/tbea.webp';
 import tetrapak from '../assets/clients/tetrapak.webp';
 import wockhardt from '../assets/clients/wockhardt.webp';
+import HeroCanvas from '../components/HeroCanvas';
+
 
 function Home({ onContactClick }) {
     return (
         <>
+        <div>
+            {/* <HeroCanvas /> */}
+        </div>
         <section
             id="home"
             className="relative w-full h-[500px] md:h-[600px] overflow-hidden"
