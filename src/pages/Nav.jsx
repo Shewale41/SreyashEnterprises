@@ -1,4 +1,4 @@
-
+import { FiPhoneCall } from "react-icons/fi";
 
 function Nav() {
     return (
@@ -7,14 +7,19 @@ function Nav() {
                 <p>SE</p>
             </div>
             <div className="flex flex-1 justify-center gap-25">
-                <h2>Home</h2>
-                <h2>About</h2>
-                <h2>Services</h2>
+                <a href="#home" className="hover:text-gray-700">Home</a>
+                <a href="#services" className="hover:text-gray-700">Services</a>
+                <a href="#about" className="hover:text-gray-700">About</a>
             </div>
             <div className="flex-1 flex justify-end">
-                <button className='bg-blue-300 px-4 py-2 rounded'
-                style={{ backgroundColor: "hsl(37, 45%, 55%)", color: "white" }}
-                >Contact Us</button>
+                <a
+                    href="tel:+1234567890"
+                    className="flex items-center bg-blue-300 px-4 py-2 rounded"
+                    style={{ backgroundColor: "hsl(37, 45%, 55%)", color: "white" }}
+                >
+                    <FiPhoneCall className="mr-2" />
+                    Call
+                </a>
             </div>
         </div>
     );
